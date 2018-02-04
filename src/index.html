@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
+
 	<body>
-		<p>哈哈哈cvcxvcxvcxv</p>
-		<h1>哈哈哈你是我的眼</h1>
+		<header>
+			<ul class="left">
+				<li>郑州</li>
+				<li>
+					<a href="#" id="xianshi">[切换城市]</a>
+				</li>
+				<li>同城帮首页</li>
+			</ul>
+			<ul class="right">
+				<li>
+					<a href="#">登录</a>
+				</li>
+				<li>
+					<a href="">注册</a>
+				</li>
+				<li>我的订单</li>
+				<li>在线服务(9:00-21:00)</li>
+				<li>客户服务</li>
+				<li>论坛</li>
+				<li style="color: red;">投诉建议</li>
+			</ul>
+		</header>
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="#">城市列表</a>
+				</li>
+				<li><input type="button" name="" id="btn" value="关闭" /></li>
+			</ul>
+
+			<ul class="hot">
+
+			</ul>
+			<ul class="list">
+
+			</ul>
+			<ul class="city">
+
+			</ul>
+
+		</div>
 	</body>
+	<script type="text/html" id="temohou">
+		<%for(var i = 0 ;i < hotCity.length ; i ++){%>
+
+		<li>
+			<%=hotCity[i].name%>
+		</li>
+
+		<%}%>
+	</script>
+	<script type="text/html" id="temolist">
+		<%for(var k in obj){%>
+
+		<li onclick="changeCity('<%=k%>')">
+			<%=k%>
+		</li>
+
+		<%}%>
+	</script>
+	<script type="text/html" id="temoCity">
+		<%for(var i = 0 ;i < City.length ; i ++){%>
+
+		<li>
+			<%=City[i].name%>
+		</li>
+
+		<%}%>
+	</script>
+	<script type="text/javascript" src="js/baiduTemplate.js">
+	</script>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var hotCity;
+		var cityList;
+		$.getJSON("http://localhost:8080/src/data/city.json", function(res) {
+			console.log(res);
+
+			var cityObj = res.result;
+			hotCity = cityObj.hotcity;
+			cityList = cityObj.citylist;
+			$(".hot").html(baidu.template("temohou", { hotCity: hotCity }))
+			$(".list").html(baidu.template("temolist", { obj: cityList }))
+
+		})
+
+		function changeCity(key) {
+			var City = cityList[key];
+			$(".city").html(baidu.template("temoCity", { City: City }))
+		}
+		
+		//显示隐藏部分
+		$("#btn").click(function() {
+			$("#nav").hide();
+		});
+
+		$("#xianshi").click(function() {
+			$("#nav").show();
+		});
+	</script>
+
 </html>
