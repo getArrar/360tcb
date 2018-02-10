@@ -4,10 +4,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="css/swiper.min.css">
+
+		<!-- Demo styles -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 
 	<body>
+		<!--头部-->
 		<header>
 			<ul class="left">
 				<li>郑州</li>
@@ -30,6 +38,7 @@
 				<li style="color: red;">投诉建议</li>
 			</ul>
 		</header>
+		<!--头部-->
 		<div id="nav">
 			<ul>
 				<li>
@@ -49,7 +58,101 @@
 			</ul>
 
 		</div>
+
+		<!--导航栏-->
+		<div class="container">
+			<div id="">
+				<img src="img/Image 1.png" />
+				<ul>
+					<li>
+						<a href="#">二手优品</a>
+					</li>
+					<li>
+						<a href="#">手机回收</a>
+					</li>
+					<li>
+						<a href="#">手机维修</a>
+					</li>
+					<li>
+						<a href="#">电脑维修</a>
+					</li>
+					<li>
+						<a href="#">已旧换新</a>
+					</li>
+					<li>
+						<a href="#">手机租用</a>
+					</li>
+				</ul>
+
+			</div>
+			<!--导航栏-->
+            <!--轮播图部分-->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/t010277e84ce18b98b6.png" alt="..." class="img-1">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/t019f09cd1c5850e1a7.png" alt="..." class="img-1">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/t01f2fbcfa29801c4b2.jpg" alt="..." class="img-1">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/t01f33137f9dde655ce.png" alt="..." class="img-1">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+
+				</div>
+				</div>
+            <!--轮播图部分-->
+				
+			</div>
+			</div>
+			
+            <ul id="daohang">
+            	<li class="li1">修手机/pad</li>
+            	<li></li>
+            	<li></li>
+            	<li></li>
+            </ul>
+            <div id="div_1">
+            	
+            </div>
+            <div id="div_2">
+            	
+            </div>
+            <div id="div_3">
+            	
+            </div>
+            <div id="div_4">
+            	
+            </div>
+			
 	</body>
+	
+	
+	
+	
 	<script type="text/html" id="temohou">
 		<%for(var i = 0 ;i < hotCity.length ; i ++){%>
 
@@ -77,10 +180,36 @@
 
 		<%}%>
 	</script>
+	<script type="text/html" id="temoXiu">
+		<%for(var i = 0 ;i < xiu1Obj.length ; i ++){%>
+			<ul class="xiu1">
+            		
+				<li>
+					<%=xiu1Obj[i].name%>
+				<%for(var j = 0 ;j < xiu1Obj[i].list.length ; j ++){%>
+					<ul>
+						<li>
+							<%=xiu1Obj[i].list[j].name%>
+						</li>
+					</ul>
+				<%}%>
+				</li>
+			</ul>
+		
+
+		<%}%>
+	
+	</script>
 	<script type="text/javascript" src="js/baiduTemplate.js">
 	</script>
 	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- 轮播图 -->
+	<script type="text/javascript" src="bootstrap/bootstrap/js/bootstrap.min.js">
+	</script>
+	<!-- 轮播图 -->
 	<script type="text/javascript">
+		//city.json部分
 		var hotCity;
 		var cityList;
 		$.getJSON("http://localhost:8080/src/data/city.json", function(res) {
@@ -93,20 +222,47 @@
 			$(".list").html(baidu.template("temolist", { obj: cityList }))
 
 		})
+		//city.json部分
+		
+		//xiu1.json部分
+		$.getJSON("http://localhost:8080/src/data/xiu1.json", function(res) {
+			console.log(res);
+
+			var xiu1Obj = res.result;
+		
+			console.log(xiu1Obj)
+			$("#div_1").html(baidu.template("temoXiu",{xiu1Obj:xiu1Obj}));
+			
+			
+
+
+		})
+		//xiu1.json部分
 
 		function changeCity(key) {
 			var City = cityList[key];
 			$(".city").html(baidu.template("temoCity", { City: City }))
 		}
-		
+
 		//显示隐藏部分
 		$("#btn").click(function() {
-			$("#nav").hide();
+			$("#nav").stop().hide()
+
 		});
 
 		$("#xianshi").click(function() {
-			$("#nav").show();
+			$("#nav").stop().show();
 		});
+		
+		$(".li1").hover(function(){
+			$("#div_1").stop().show();
+		},function(){
+			$("#div_1").stop().hide()
+		});
+		
+
+	
+		
 	</script>
 
 </html>
