@@ -2,6 +2,7 @@
     "errno": 0,
     "errmsg": "OK",
     "result": [
+    
         {
             "model_id": 1,
             "brand_id": 10,
@@ -27,10 +28,12 @@
             "img_url": "https://p.ssl.qhimg.com/t01078047308a85471c.jpg"
         },
         {
-            "model_id": 6094,
-            "brand_id": 20,
-            "model_alis": "魅族 MX5",
-            "img_url": "https://p.ssl.qhimg.com/t0127e99c045a53e82e.jpg"
+            "model_id": 4938,
+            "brand_id": 1,
+            "model_alis": "魅族 Mx 5",
+            "img_url": "https://p.ssl.qhimg.com/t01078047308a85471c.jpg"
         }
+        
+       
     ]
 }

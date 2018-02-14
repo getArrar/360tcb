@@ -24,7 +24,7 @@
 				</li>
 				<li>同城帮首页</li>
 			</ul>
-			<ul class="right">
+			<ul class="ulright">
 				<li>
 					<a href="#">登录</a>
 				</li>
@@ -86,8 +86,8 @@
 
 			</div>
 			<!--导航栏-->
-            <!--轮播图部分-->
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+			<!--轮播图部分-->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -123,36 +123,59 @@
 					</div>
 
 				</div>
+			</div>
+			<!--轮播图部分-->
+			<div id="box_1">
+				<a href="http://bang.360.cn/xiu/battery?from=index"><img src="https://p.ssl.qhimg.com/t01aad5c130b8653368.jpg" /></a>
+				<a href="http://bang.360.cn/xiu/battery?from=index"><img src="https://p.ssl.qhimg.com/t01dc8f9631026e7e17.jpg" /></a>
+				<a href="http://bang.360.cn/huanxin/kindle?from=index"><img src="https://p.ssl.qhimg.com/t013b648422d14559d0.png" /></a>
+				<a href="http://bang.360.cn/youpin/shengji?from=index"><img src="https://p.ssl.qhimg.com/t01fc1fd0e5522663ba.jpg" /></a>
+			</div>
+			<div class="title">
+				<h4>热门手机回收</h4>
+				<a href="#">查看更多</a>
+			</div>
+			<div id="box_2">
+				<div class="left">
+					<a href="http://bang.360.cn/youpin?from=index"><img src="img/Image2324.png" /></a>
 				</div>
-            <!--轮播图部分-->
-				
+				<div class="right"></div>
 			</div>
+			<div class="title">
+				<h4>优品精选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+				<a href="#" class="margin">查看更多</a>
 			</div>
-			
-            <ul id="daohang">
-            	<li class="li1">修手机/pad</li>
-            	<li></li>
-            	<li></li>
-            	<li></li>
-            </ul>
-            <div id="div_1">
-            	
-            </div>
-            <div id="div_2">
-            	
-            </div>
-            <div id="div_3">
-            	
-            </div>
-            <div id="div_4">
-            	
-            </div>
-			
+			<div id="box_2">
+				<div class="left">
+					<a href="http://bang.360.cn/youpin?from=index"><img src="img/Image 1111.png" /></a>
+				</div>
+				<div class="right2">
+
+				</div>
+			</div>
+			<h2>到店维修</h2>
+		</div>
+
+		<ul id="daohang">
+			<li class="li1"><span class="glyphicon glyphicon-phone"></span>修手机/pad</li>
+			<li class="li2"><span class="glyphicon glyphicon-blackboard"></span>修电脑</li>
+			<li class="li3"><span class="glyphicon glyphicon-inbox"></span>卖手机/电脑</li>
+			<li class="li4"><span class="glyphicon glyphicon-print"></span>卖二手手机</li>
+
+		</ul>
+		<div id="div_1">
+
+		</div>
+		<div id="div_2">
+			<div id="top"></div>
+			<div id="botm"></div>
+
+		</div>
+		<div id="div_3"></div>
+		<div id="div_4"></div>
+
 	</body>
-	
-	
-	
-	
+
 	<script type="text/html" id="temohou">
 		<%for(var i = 0 ;i < hotCity.length ; i ++){%>
 
@@ -182,39 +205,106 @@
 	</script>
 	<script type="text/html" id="temoXiu">
 		<%for(var i = 0 ;i < xiu1Obj.length ; i ++){%>
-			<ul class="xiu1">
-            		
-				<li>
-					<%=xiu1Obj[i].name%>
+		<ul class="xiu1">
+
+			<li>
+				<%=xiu1Obj[i].name%>
 				<%for(var j = 0 ;j < xiu1Obj[i].list.length ; j ++){%>
-					<ul>
-						<li>
-							<%=xiu1Obj[i].list[j].name%>
-						</li>
-					</ul>
+				<ul>
+					<li>
+						<%=xiu1Obj[i].list[j].name%>
+					</li>
+				</ul>
 				<%}%>
-				</li>
-			</ul>
-		
+			</li>
+		</ul>
+		<%}%>
+
+	</script>
+	<script type="text/html" id="temoXiu2top">
+		<%for(var i = 0 ;i <hot.length ; i ++){%>
+
+		<ul>
+			<li>
+				<%=hot[i].name%>
+			</li>
+		</ul>
 
 		<%}%>
-	
-	</script>
-	<script type="text/javascript" src="js/baiduTemplate.js">
-	</script>
-	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 
-	<!-- 轮播图 -->
-	<script type="text/javascript" src="bootstrap/bootstrap/js/bootstrap.min.js">
 	</script>
-	<!-- 轮播图 -->
+	<script type="text/html" id="temoXiu2btom">
+		<%for(var i = 0 ;i <other.length ; i ++){%>
+
+		<ul>
+			<li>
+				<%=other[i].name%>
+			</li>
+		</ul>
+
+		<%}%>
+
+	</script>
+	<script type="text/html" id="temoXiu3">
+		<%for(var i = 0 ;i < xiu3Obj.length ; i ++){%>
+
+		<ul>
+			<li>
+				<%=xiu3Obj[i].name%>
+			</li>
+		</ul>
+
+		<%}%>
+
+	</script>
+	<script type="text/html" id="temoXiu4">
+		<%for(var k in xiu4Obj){%>
+
+		<ul>
+			<li>
+				<%=xiu4Obj[k]%>
+			</li>
+		</ul>
+
+		<%}%>
+
+	</script>
+	<script type="text/html" id="huiShou">
+		<%for(var i = 0 ;i < huiShou.length ; i ++){%>
+
+		<div class="con">
+			<div class="right_top"><img src="<%=huiShou[i].img_url%>" /></div>
+			<div class="right_bottom">
+				<%=huiShou[i].model_alis%>
+			</div>
+		</div>
+		<%}%>
+
+	</script>
+	<script type="text/html" id="youpin">
+		<%for(var i = 0 ;i < youpin.length ; i ++){%>
+
+		<div class="con2">
+			<div class="right_top"><img src="<%=youpin[i].thum_img.big%>" /></a></div>
+			<div class="right_bottom">
+				<%=youpin[i].model_name%>
+			</div>
+			<div class="right_bottom2">
+				<%=youpin[i].com_price%>
+			</div>
+		</div>
+		<%}%>
+
+	</script>
+	<script type="text/javascript" src="js/baiduTemplate.js"></script>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript">
 		//city.json部分
 		var hotCity;
 		var cityList;
 		$.getJSON("http://localhost:8080/src/data/city.json", function(res) {
-			console.log(res);
-
 			var cityObj = res.result;
 			hotCity = cityObj.hotcity;
 			cityList = cityObj.citylist;
@@ -223,21 +313,63 @@
 
 		})
 		//city.json部分
-		
+
 		//xiu1.json部分
 		$.getJSON("http://localhost:8080/src/data/xiu1.json", function(res) {
-			console.log(res);
-
 			var xiu1Obj = res.result;
-		
-			console.log(xiu1Obj)
-			$("#div_1").html(baidu.template("temoXiu",{xiu1Obj:xiu1Obj}));
-			
-			
-
+			$("#div_1").html(baidu.template("temoXiu", { xiu1Obj: xiu1Obj }));
 
 		})
 		//xiu1.json部分
+
+		//xiu2.json部分
+		var hot;
+		var other;
+		$.getJSON("http://localhost:8080/src/data/xiu2.json", function(res) {
+			console.log(res);
+			var xiu2Obj = res.result;
+			hot = xiu2Obj.hot;
+			other = xiu2Obj.other;
+
+			$("#top").html(baidu.template("temoXiu2top", { xiu2Obj: xiu2Obj }));
+			$("#botm").html(baidu.template("temoXiu2btom", { xiu2Obj: xiu2Obj }));
+		})
+		//xiu2.json部分
+		//xiu3.json部分
+
+		$.getJSON("http://localhost:8080/src/data/xiu3.json", function(res) {
+			console.log(res);
+			var xiu3Obj = res.result;
+
+			$("#div_3").html(baidu.template("temoXiu3", { xiu3Obj: xiu3Obj }));
+		})
+		//xiu3.json部分
+		//xiu4.json部分
+
+		$.getJSON("http://localhost:8080/src/data/xiu4.json", function(res) {
+			var xiu4Obj = res.result;
+
+			$("#div_4").html(baidu.template("temoXiu4", { xiu4Obj: xiu4Obj }));
+		})
+		//xiu4.json部分
+		//shoujihuishou.json部分
+
+		$.getJSON("http://localhost:8080/src/data/shoujihuishou.json", function(res) {
+			var huiShou = res.result;
+
+			$(".right").html(baidu.template("huiShou", { huiShou: huiShou }));
+
+		})
+		//shoujihuishou.json部分
+		//shoujihuishou.json部分
+
+		$.getJSON("http://localhost:8080/src/data/youpinjingxuan.json", function(res) {
+			var youpin = res.result;
+			console.log(youpin);
+			$(".right2").html(baidu.template("youpin", { youpin: youpin }));
+
+		})
+		//shoujihuishou.json部分
 
 		function changeCity(key) {
 			var City = cityList[key];
@@ -253,16 +385,31 @@
 		$("#xianshi").click(function() {
 			$("#nav").stop().show();
 		});
-		
-		$(".li1").hover(function(){
+
+		$(".li1").hover(function() {
 			$("#div_1").stop().show();
-		},function(){
+		}, function() {
 			$("#div_1").stop().hide()
 		});
-		
 
-	
-		
+		$(".li2").hover(function() {
+			$("#div_2").stop().show();
+		}, function() {
+			$("#div_2").stop().hide()
+		});
+
+		$(".li3").hover(function() {
+			$("#div_3").stop().show();
+		}, function() {
+			$("#div_3").stop().hide()
+		});
+
+		$(".li4").hover(function() {
+			$("#div_4").stop().show();
+		}, function() {
+			$("#div_4").stop().hide()
+		});
+		//显示隐藏部分
 	</script>
 
 </html>
