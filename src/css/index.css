@@ -4,9 +4,6 @@
 	list-style: none;
 	text-decoration: none;
 }
-/*body{
-	position: absolute;
-}*/
 /*头部*/
 header {
 	width: 100%;
@@ -35,20 +32,19 @@ header ul:nth-of-type(2) {
 }
 
 .left,
-.right {
+.ulright {
 	display: flex;
 	list-style: none;
 }
 
 .left>li,
-.right>li {
+.ulright>li {
 	margin-left: 10px;
 	font-size: 13px;
 }
-.right li{
+.ulright li{
 	border-right: 1px solid gainsboro;
-	padding-right: 10px
-	;
+	padding-right: 10px;
 }
 #nav {
 	width: 455px;
@@ -77,8 +73,6 @@ header ul:nth-of-type(2) {
 	font-size: 13px;
 	background: white;
 	padding-top: 10px;
-	
-	
 }
 #nav ul:nth-of-type(2) li{
 	float: left;
@@ -90,8 +84,6 @@ header ul:nth-of-type(2) {
 	background: white;
 	padding-top: 10px;
 	position: relative;
-	
-	;
 }
 #nav ul:nth-of-type(3) li{
 	float: left;
@@ -133,7 +125,6 @@ header ul:nth-of-type(2) {
 }
 .container ul{
 	float: left;
-	
 }
 
 .container ul li{
@@ -143,7 +134,6 @@ header ul:nth-of-type(2) {
 .container ul li a:hover{
 	background: gainsboro;
 }
-
 .item img{
 	width: 100%;
 	height: 100%;
@@ -158,7 +148,6 @@ header ul:nth-of-type(2) {
 	position: relative;
 	font-size: 20px;
 	color: white;
-	text-align: center;
 	line-height: 70px;
 }
 .box{
@@ -167,7 +156,7 @@ header ul:nth-of-type(2) {
 #daohang{
 	position: absolute;
     top: 120px;
-    left: 132px;
+    left: 144px;
 	
 }
 #daohang li:hover{
@@ -176,7 +165,7 @@ header ul:nth-of-type(2) {
 
 #div_1{
 	
-	border: 1px solid yellow;
+	border: 1px solid gainsboro;
 	position: absolute;
 	left: 367px;
 	top: 120px;
@@ -186,34 +175,170 @@ header ul:nth-of-type(2) {
 #div_2{
 	width: 500px;
 	height: 300px;
-	border: 1px solid red;
+	border: 1px solid gainsboro;
 	position: absolute;
 	left: 367px;
 	top: 120px;
+	background: white;
+	display: none;
+	overflow: hidden;
+}
+
+#top ul li{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border: 1px solid gainsboro;
+	flex-wrap: wrap;
+	margin: 5px 5px;
+	text-align: center;
+	line-height: 40px;	
+}
+#botm ul li{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border: 1px solid gainsboro;
+	flex-wrap: wrap;
+	margin: 5px 5px;
+	text-align: center;
+	line-height: 40px;
+}
+#daohang span{
+	margin: 20px 30px;
 }
 #div_3{
-	width: 500px;
-	height: 300px;
-	border: 1px solid yellow;
+	width: 500PX;
+	border: 1px solid gainsboro;
 	position: absolute;
 	left: 367px;
 	top: 120px;
+	display: none;
+	background: white;
+	overflow: hidden;
+}
+
+#div_3 ul li{
+	float: left;
+	width: 100px;
+	height: 40px;
+	border: 1px solid gainsboro;
+	flex-wrap: wrap;
+	margin: 5px 10px;
+	text-align: center;
+	line-height: 40px;
 }
 #div_4{
 	width: 500px;
 	height: 300px;
-	border: 1px solid yellow;
+	border: 1px solid gainsboro;
 	position: absolute;
 	left: 367px;
 	top: 120px;
+	display: none;
+	background: white;
 }
-
+#div_4 ul li{
+	float: left;
+	width: 100px;
+	height: 40px;
+	border: 1px solid gainsboro;
+	flex-wrap: wrap;
+	margin: 5px 10px;
+	text-align: center;
+	line-height: 40px;
+}
 /*导航*/
 .xiu1 li{
-	
 	display: flex;
 	margin-left: 13px;
 	border-right: 1px solid gainsboro;
 	height: 20px;
 	padding-right: 10px;
+}
+#box_1{
+	width: 100%;
+	height: 130px;
+	/*border: 1px solid red;*/
+}
+#box_1 img{
+	width: 25%;
+	border: 1px solid gainsboro;
+}
+.title{
+ width: 100%;
+ display: flex;
+}
+.title a{
+	margin-left: 800px;
+	margin-top: 10px;
+}
+
+#box_2{
+	width: 100%;
+	height: 247px;
+	border: 1px solid ;
+	display: flex;
+}
+#box_2 figure{
+	width: 150px;
+	flex: 1;
+	text-align: center;
+	margin-left: 10px;
+	border: 1px solid red;
+}
+#box_2 figure img{
+   width: 90px;
+   margin-left: 30px;;
+  
+}
+
+#left{
+	width: 100px;
+	height: 100px;
+	border: 1px solid red;
+}
+.left img{
+	width: 150px;
+}
+.right{
+	display: flex;
+}
+.right2{
+	display: flex;
+}
+.right2 img{
+	width: 120px;
+	height: 200px;
+}
+.con{
+	/*border: 1px solid red;*/
+	height: 200px;
+	width: 100px;
+	flex: 1;
+	margin-left: 60px;
+	
+}
+.con2{
+	/*border: 1px solid red;*/
+	height: 300px;
+	width: 120px;
+	flex: 1;
+	margin-left: 45px;
+	text-align: center;
+	
+}
+.con img{
+	width: 100px;
+	height: 200px;
+	text-align: center;
+}
+.right_bottom{
+	text-align: center;
+	color: gray;
+
+}
+.right_bottom2{
+	color: red;
+
 }
