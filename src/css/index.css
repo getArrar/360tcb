@@ -4,6 +4,9 @@
 	list-style: none;
 	text-decoration: none;
 }
+body{
+/*background: #F7F7F7;*/	
+}
 /*头部*/
 header {
 	width: 100%;
@@ -111,30 +114,32 @@ header ul:nth-of-type(2) {
 }
 /*头部*/
 
-.container{
+#container{
 	width: 80%;
 	margin: auto;
-	border: 1px solid;
+	/*border: 1px solid;*/
 	overflow: hidden;
 	position: absolute;
 	left: 130px;
 	top: 30px;
 }
-.container img{
+#ul_x img{
 	float: left;
 }
-.container ul{
+#ul_x ul{
 	float: left;
+	margin-left: 382px;
 }
 
-.container ul li{
+#ul_x ul li{
     float: left;
     padding: 30px 20px;
+    /*border: 1px solid brown;*/
 }
-.container ul li a:hover{
-	background: gainsboro;
-}
-.item img{
+/*#ul_x ul li:hover{
+	background: gray;
+}*/
+#container.item img{
 	width: 100%;
 	height: 100%;
 }
@@ -142,13 +147,13 @@ header ul:nth-of-type(2) {
 /*导航*/
 #daohang li{
 	width: 235px;
-	height: 70px;
+	height: 90px;
 	border: 1px solid white;
 	background: rgba(0,0,0,0.3);
 	position: relative;
 	font-size: 20px;
 	color: white;
-	line-height: 70px;
+	line-height: 90px;
 }
 .box{
 	height: 500px;
@@ -156,7 +161,7 @@ header ul:nth-of-type(2) {
 #daohang{
 	position: absolute;
     top: 120px;
-    left: 144px;
+    left: 131px;
 	
 }
 #daohang li:hover{
@@ -164,7 +169,6 @@ header ul:nth-of-type(2) {
 }
 
 #div_1{
-	
 	border: 1px solid gainsboro;
 	position: absolute;
 	left: 367px;
@@ -209,7 +213,7 @@ header ul:nth-of-type(2) {
 }
 #div_3{
 	width: 500PX;
-	border: 1px solid gainsboro;
+	/*border: 1px solid gainsboro;*/
 	position: absolute;
 	left: 367px;
 	top: 120px;
@@ -258,51 +262,48 @@ header ul:nth-of-type(2) {
 }
 #box_1{
 	width: 100%;
-	height: 130px;
+	height: 173px;
 	/*border: 1px solid red;*/
 }
 #box_1 img{
-	width: 25%;
+	width: 308px
+	;
 	border: 1px solid gainsboro;
+	margin-left: 5px;
+	
 }
 .title{
  width: 100%;
+ height: 50px;
  display: flex;
+ background: #F7F7F7;
 }
 .title a{
-	margin-left: 800px;
+	margin-left: 1080px;
 	margin-top: 10px;
 }
 
 #box_2{
 	width: 100%;
-	height: 247px;
-	border: 1px solid ;
+	height: 280px;
+	border: 1px solid gainsboro;
 	display: flex;
 }
-#box_2 figure{
-	width: 150px;
-	flex: 1;
-	text-align: center;
-	margin-left: 10px;
-	border: 1px solid red;
-}
-#box_2 figure img{
-   width: 90px;
-   margin-left: 30px;;
-  
-}
+
+
 
 #left{
 	width: 100px;
 	height: 100px;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 .left img{
-	width: 150px;
+	width: 180px;
+	height: 100%;
 }
 .right{
 	display: flex;
+	
 }
 .right2{
 	display: flex;
@@ -331,6 +332,7 @@ header ul:nth-of-type(2) {
 .con img{
 	width: 100px;
 	height: 200px;
+	margin-left: 30px;
 	text-align: center;
 }
 .right_bottom{
@@ -341,4 +343,230 @@ header ul:nth-of-type(2) {
 .right_bottom2{
 	color: red;
 
+}
+#serch{
+	width: 100%;
+	height: 80px;
+	/*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+}
+#serch div{
+	width: 150px;
+	height: 50px;
+	border: 1px solid #118855;
+	margin-right: 10px;
+	}
+#serch input{
+	width: 460px;
+	height: 50px;
+    border: none;
+    border: 1px solid #118855;
+}
+#serch a{
+	display: block;
+	width: 100px;
+	height: 50px;
+	background: #118855;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+#container_2{
+	width: 100%;
+	/*border: 1px solid red;*/
+	display: flex;
+}
+.container_2_left{
+	width: 70%;
+	height: 680px;
+	/*border: 1px solid red;*/
+}
+.container_2_right{
+	width: 25%;
+	height: 680px;
+	/*border: 1px solid red;*/
+	margin-left: 5%;
+}
+#container .v_1{
+	width: 100%;
+	height: 50px;
+	background: #F7F7F7;
+	display: flex;
+}
+#container .v_1 li{
+	width: 120px;
+	/*border: 1px solid red;*/
+	text-align:center;
+	line-height: 50px;
+}
+#container .v_1 .ditu{
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 150px;
+	margin-top: 10px;
+}
+#foot{
+	width: 100%;
+	height: 230px;
+	background: #FAFAFA;
+	position: absolute;
+	left: 0px;
+	bottom: -1600px;
+}
+.box_1{
+	width: 100%;
+	height: 120px;
+	border: 1px solid gainsboro;
+	display: flex;
+	margin-top: 5px;
+}
+.right figure img{
+	height: 70%;
+	margin-top: 30px;
+	
+	
+}
+.right figure{
+	width: 217px;
+	border: 1px solid gainsboro;
+	text-align: center;
+	
+	
+}
+.right2 figure img{
+	height: 70%;
+	margin-top: 20px;
+	
+	
+}
+.right2 figure{
+	width: 217px;
+	border: 1px solid gainsboro;
+	text-align: center;
+	
+	
+}
+.box_1 div:nth-of-type(1){
+	width: 120px;
+	height: 120px;
+	/*border: 1px solid rosybrown;*/
+	
+}
+.box_1 div:nth-of-type(2){
+	width: 450px;
+	height: 120px;
+	/*border: 1px solid rosybrown;*/
+	overflow: hidden;
+	padding-top: 20px;
+}
+.box_1 div:nth-of-type(2)img{
+	width: 80px;
+	height: 80px;
+}
+.box_1 div:nth-of-type(2) p{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.box_1 div:nth-of-type(3){
+	width: 300px;
+	height: 120px;
+	/*border: 1px solid rosybrown;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.box_1 div:nth-of-type(3) a{
+	display: block;
+	border: 1px solid #118855;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 10px;
+	color: #118855;
+	display: none;
+}
+.container_2_right li{
+	width: 100%;
+	height: 90px;
+	border: 1px solid gainsboro;
+	display: flex;
+	align-items: center;
+}
+#hed{
+	width: 100%;
+	height: 50px;
+	background: #F7F7F7;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	
+
+}
+#foot div:nth-of-type(1){
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 150px;
+	align-items: center;
+	border: 1px solid gainsboro;
+}
+#foot div:nth-of-type(2){
+	text-align: center;
+	padding-top: 40px;
+	border: 1px solid gainsboro;
+}
+#foot div:nth-of-type(1) ul{
+	width: 200px;
+	
+}
+.li-b{
+	font-size: 20px;
+	font-weight: 800;
+}
+.container_2_left img{
+	width: 100px;
+	height: 100px;
+}
+/*box_1hover效果*/
+.box_1:hover{
+	background: ghostwhite;
+}
+/*hover效果让a标签显示*/
+.box_1:hover div .store{
+	display: block;
+}
+.box_1 div:nth-of-type(1){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.yuan{
+	height: 35px;
+	width: 35px;
+	border: 3px solid orangered;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 35px;
+	color: orangered;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.remen-2{
+
+	font-size: 12px;
+	margin-right: 10px;
+}
+.remen img{
+    width: 50px;
+    height: 50px;
+}
+.list li{
+	border: 1px solid gainsboro;
 }
