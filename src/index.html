@@ -10,7 +10,8 @@
 	</head>
 
 	<body>
-		<!--头部-->
+		<!---------------------头部结构部分----------------------------->
+		
 		<header>
 			<ul class="left">
 				<li>郑州</li>
@@ -33,7 +34,9 @@
 				<li style="color: red;">投诉建议</li>
 			</ul>
 		</header>
-		<!--头部-->
+		<!-------------------头部结构部分------------------------------->
+		
+		<!-------------------城市列表结构部分--------------------------->
 		<div id="nav">
 			<ul>
 				<li>
@@ -53,8 +56,10 @@
 			</ul>
 
 		</div>
-
-		<!--导航栏-->
+		<!-------------------城市列表结构部分------------------------------->
+		
+		<!-------------------轮播定位列表结构部分--------------------------->
+		
 		<div id="container">
 			<div id="ul_x">
 				<img src="img/Image 1.png" />
@@ -80,8 +85,10 @@
 				</ul>
 
 			</div>
-			<!--导航栏-->
-			<!--轮播图部分-->
+		<!-------------------轮播定位列表结构部分--------------------------->
+			
+		<!------------------------轮播图部分-------------------------------->
+		
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -120,7 +127,8 @@
 
 				</div>
 			</div>
-			<!--轮播图部分-->
+		<!-----------------------------轮播图部分--------------------------->
+			
 			<div id="box_1">
 				<a href="http://bang.360.cn/xiu/battery?from=index"><img src="https://p.ssl.qhimg.com/t01aad5c130b8653368.jpg" /></a>
 				<a href="http://bang.360.cn/xiu/battery?from=index"><img src="https://p.ssl.qhimg.com/t01dc8f9631026e7e17.jpg" /></a>
@@ -150,12 +158,17 @@
 				</div>
 			</div>
 			<h2>到店维修</h2>
+		<!-------------------------------搜索部分--------------------------->
+			
 			<div id="serch">
 				<div></div>
 				<div></div>
 				<input type="search" name="" id="sousuo" value="" placeholder="请输入您的位置查找附近的商家" />
 				<a href="#">搜索</a>
 			</div>
+		<!-------------------------------搜索部分--------------------------->
+			
+		<!---------------------------店铺详情部分--------------------------->
 			<div id="container_2">
 				<div class="container_2_left">
 					<ul class="v_1">
@@ -169,11 +182,16 @@
 							地图模式
 						</li>
 					</ul>
+					
 					<div class="v_2">
 
 					</div>
+		<!----------------------------店铺详情部分------------------------------>
+					
 
 				</div>
+		<!---------------------------商家好评店铺部分--------------------------->
+				
 				<div class="container_2_right">
 					<div id="hed">
 						商家好评榜
@@ -182,28 +200,30 @@
 
 					</ul>
 				</div>
+		<!---------------------------商家好评店铺部分--------------------------->
+				
 			</div>
 		</div>
 
+		<!---------------------------轮播导航栏定位部分--------------------------->
 		<ul id="daohang">
 			<li class="li1"><span class="glyphicon glyphicon-phone"></span>修手机/pad</li>
 			<li class="li2"><span class="glyphicon glyphicon-blackboard"></span>修电脑</li>
 			<li class="li3"><span class="glyphicon glyphicon-inbox"></span>卖手机/电脑</li>
 			<li class="li4"><span class="glyphicon glyphicon-print"></span>卖二手手机</li>
-
 		</ul>
+		
 		<div id="div_1">
 
 		</div>
 		<div id="div_2">
 			<div id="top"></div>
 			<div id="botm"></div>
-
 		</div>
 		<div id="div_3"></div>
 		<div id="div_4"></div>
-		<!--////////////////////////////////////////////////////////////////-->
-
+		<!---------------------------轮播导航栏定位部分--------------------------->
+		<!------------------------------脚部结构部分------------------------------>
 		<div id="foot">
 			<div>
 
@@ -234,9 +254,10 @@
 				<p>京ICP备08010314号-19 京公网安备110000000006号</p>
 			</div>
 		</div>
-		<!--////////////////////////////////////////////////////////////////-->
+		<!---------------------------脚部结构部分--------------------------->
 	</body>
-
+		<!------------------------百度模板渲染部分--------------------------->
+	<!--热门城市渲染-->
 	<script type="text/html" id="temohou">
 		<%for(var i = 0 ;i < hotCity.length ; i ++){%>
 
@@ -246,6 +267,9 @@
 
 		<%}%>
 	</script>
+	<!--热门城市渲染-->
+	
+	<!--搜索城市渲染-->
 	<script type="text/html" id="temolist">
 		<%for(var k in obj){%>
 
@@ -264,6 +288,8 @@
 
 		<%}%>
 	</script>
+	<!--搜索城市渲染-->
+	<!--修手机/pad渲染部份-->
 	<script type="text/html" id="temoXiu">
 		<%for(var i = 0 ;i < xiu1Obj.length ; i ++){%>
 		<ul class="xiu1">
@@ -280,8 +306,10 @@
 			</li>
 		</ul>
 		<%}%>
-
 	</script>
+	<!--修手机/pad渲染部份-->
+	
+	<!--修电脑渲染部分-->
 	<script type="text/html" id="temoXiu2top">
 		<%for(var i = 0 ;i <hot.length ; i ++){%>
 
@@ -306,6 +334,10 @@
 		<%}%>
 
 	</script>
+	<!--修电脑渲染部分-->
+	
+	
+	<!--卖手机/电脑渲染部分-->
 	<script type="text/html" id="temoXiu3">
 		<%for(var i = 0 ;i < xiu3Obj.length ; i ++){%>
 
@@ -318,6 +350,9 @@
 		<%}%>
 
 	</script>
+	<!--卖手机/电脑渲染部分-->
+	
+	<!--卖二手手机渲染部分-->
 	<script type="text/html" id="temoXiu4">
 		<%for(var k in xiu4Obj){%>
 
@@ -328,11 +363,13 @@
 		</ul>
 
 		<%}%>
-
 	</script>
+	<!--卖二手手机渲染部分-->
+	
+	
+	<!--手机回收渲染部分-->
 	<script type="text/html" id="huiShou">
 		<%for(var i = 0 ;i < huiShou.length ; i ++){%>
-
 		<figure>
 			<img src="<%=huiShou[i].img_url%>" />
 			<figcaption>
@@ -342,8 +379,10 @@
 			</figcaption>
 		</figure>
 		<%}%>
-
 	</script>
+	<!--手机回收渲染部分-->
+	
+	<!--优品精选渲染部分-->
 	<script type="text/html" id="youpin">
 		<%for(var i = 0 ;i < youpin.length ; i ++){%>
 
@@ -353,15 +392,16 @@
 				<p>
 					<%=youpin[i].model_name%>
 				</p>
-				<p>￥
-					<%=youpin[i].com_price%>
+				<p>
+					￥<%=youpin[i].com_price%>
 				</p>
-
 			</figcaption>
 		</figure>
 		<%}%>
-
 	</script>
+	<!--优品精选渲染部分-->
+	
+	<!--店铺详情渲染部分 默认排序-->
 	<script type="text/html" id="shop1">
 		<%for(var i = 0 ;i < req.length ; i ++){%>
 
@@ -370,7 +410,6 @@
 				<img src="<%=req[i].shop_ico%>" />
 			</div>
 			<div>
-
 				<p>
 					<%=req[i].shop_name%>
 				</p>
@@ -389,6 +428,11 @@
 		</div>
 		<%}%>
 	</script>
+	<!--店铺详情渲染部分 默认排序-->
+	
+	
+	<!--店铺详情渲染部分 成交量排序-->
+	
 	<script type="text/html" id="shop2">
 		<%for(var i = 0 ;i < chengJiao.length ; i ++){%>
 
@@ -412,10 +456,13 @@
 				<span>人气：<%=chengJiao[i].shop_visit%>次浏览</span>
 				<a href="#" class="store">进入店铺</a>
 			</div>
-
 		</div>
 		<%}%>
 	</script>
+	<!--店铺详情渲染部分 成交量排序-->
+	
+	<!--店铺详情渲染部分 人气量排序-->
+	
 	<script type="text/html" id="shop3">
 		<%for(var i = 0 ;i < chengJiao.length ; i ++){%>
 
@@ -424,7 +471,6 @@
 				<img src="<%=chengJiao[i].shop_ico%>" />
 			</div>
 			<div>
-
 				<p>
 					<%=chengJiao[i].shop_name%>
 				</p>
@@ -443,6 +489,10 @@
 		</div>
 		<%}%>
 	</script>
+	<!--店铺详情渲染部分 人气量排序-->
+	
+	<!--商家好评-->
+	
 	<script type="text/html" id="remen">
 
 		<%for(var i = 0 ;i < req.length ; i ++){%>
@@ -459,173 +509,12 @@
 			</div>
 		</li>
 		<%}%>
-
 	</script>
+	<!--商家好评-->
+	
+		<!-------------------百度模板渲染部分--------------------------->
 	<script type="text/javascript" src="js/baiduTemplate.js"></script>
 	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-		//city.json部分
-		var hotCity;
-		var cityList;
-		$.getJSON("http://localhost:8080/src/data/city.json", function(res) {
-			var cityObj = res.result;
-			hotCity = cityObj.hotcity;
-			cityList = cityObj.citylist;
-			$(".hot").html(baidu.template("temohou", { hotCity: hotCity }))
-			$(".list").html(baidu.template("temolist", { obj: cityList }))
-
-		})
-		//city.json部分
-
-		//xiu1.json部分
-		$.getJSON("http://localhost:8080/src/data/xiu1.json", function(res) {
-			var xiu1Obj = res.result;
-			$("#div_1").html(baidu.template("temoXiu", { xiu1Obj: xiu1Obj }));
-            console.log(xiu1Obj)
-		})
-		//xiu1.json部分
-
-		//xiu2.json部分
-		var hot;
-		var other;
-		$.getJSON("http://localhost:8080/src/data/xiu2.json", function(res) {
-
-			var xiu2Obj = res.result;
-			hot = xiu2Obj.hot;
-			other = xiu2Obj.other;
-
-			$("#top").html(baidu.template("temoXiu2top", { xiu2Obj: xiu2Obj }));
-			$("#botm").html(baidu.template("temoXiu2btom", { xiu2Obj: xiu2Obj }));
-		})
-		//xiu2.json部分
-		//xiu3.json部分
-
-		$.getJSON("http://localhost:8080/src/data/xiu3.json", function(res) {
-
-			var xiu3Obj = res.result;
-
-			$("#div_3").html(baidu.template("temoXiu3", { xiu3Obj: xiu3Obj }));
-		})
-		//xiu3.json部分
-		//xiu4.json部分
-
-		$.getJSON("http://localhost:8080/src/data/xiu4.json", function(res) {
-			var xiu4Obj = res.result;
-
-			$("#div_4").html(baidu.template("temoXiu4", { xiu4Obj: xiu4Obj }));
-		})
-		//xiu4.json部分
-		//shoujihuishou.json部分
-
-		$.getJSON("http://localhost:8080/src/data/shoujihuishou.json", function(res) {
-			var huiShou = res.result;
-
-			$(".right").html(baidu.template("huiShou", { huiShou: huiShou }));
-
-		})
-		//shoujihuishou.json部分
-		//shoujihuishou.json部分
-
-		$.getJSON("http://localhost:8080/src/data/youpinjingxuan.json", function(res) {
-			var youpin = res.result;
-
-			$(".right2").html(baidu.template("youpin", { youpin: youpin }));
-
-		})
-		//shop1.json部分
-		function moren() {
-
-			$.getJSON("http://localhost:8080/src/data/shop1.json", function(req, res) {
-
-				console.log(req);
-				$(".v_2").html(baidu.template("shop1", { req: req }));
-
-			})
-		}
-		moren()
-		//shop1.json部分
-
-		$.getJSON("http://localhost:8080/src/data/shop1.json", function(req, res) {
-			console.log(req);
-			$(".ul_5").html(baidu.template("remen", { req: req }));
-
-		})
-		//热门部分
-		function chengJiao() {
-
-			$.getJSON("http://localhost:8080/src/data/shop2.json", function(res) {
-				var chengJiao = res.shop_data;
-				console.log(chengJiao);
-				$(".v_2").html(baidu.template("shop2", { chengJiao: chengJiao }));
-
-			})
-		}
-		//热门部分
-		//人气部分
-		function renqi() {
-
-			$.getJSON("http://localhost:8080/src/data/shop3.json", function(res) {
-				var chengJiao = res.shop_data;
-				console.log(chengJiao);
-				$(".v_2").html(baidu.template("shop3", { chengJiao: chengJiao }));
-
-			})
-		}
-		//人气部分
-
-		//shoujihuishou.json部分
-
-		function changeCity(key) {
-			var City = cityList[key];
-			$(".city").html(baidu.template("temoCity", { City: City }))
-		}
-
-		//显示隐藏部分
-		$("#btn").click(function() {
-			$("#nav").stop().hide()
-		});
-
-		$("#xianshi").click(function() {
-			$("#nav").stop().show();
-		});
-
-		$(".li1").hover(function() {
-			$("#div_1").stop().show();
-		}, function() {
-			$("#div_1").stop().hide()
-		});
-
-		$(".li2").hover(function() {
-			$("#div_2").stop().show();
-		}, function() {
-			$("#div_2").stop().hide()
-		});
-
-		$(".li3").hover(function() {
-			$("#div_3").stop().show();
-		}, function() {
-			$("#div_3").stop().hide()
-		});
-
-		$(".li4").hover(function() {
-			$("#div_4").stop().show();
-		}, function() {
-			$("#div_4").stop().hide()
-		});
-
-		//显示隐藏部分
-		$(".v_1 li").click(function() {
-			$(this).css("background", "#FFFCF4");
-			$(this).unbind("mouseout");
-
-		});
-		//			function delMsg(id) {
-		//			$.get("http://localhost:8080/delMsg", { id: id }, function() {
-		//				window.open("../src/html/dome.html")
-		//			})
-		//		}
-	</script>
-
+	<script type="text/javascript" src="js/tongchengBang.js"></script>
 </html>
