@@ -15,7 +15,6 @@
 		$.getJSON("http://localhost:8080/src/data/xiu1.json", function(res) {
 			var xiu1Obj = res.result;
 			$("#div_1").html(baidu.template("temoXiu", { xiu1Obj: xiu1Obj }));
-            console.log(xiu1Obj)
 		})
 		//xiu1.json修手机pad部分，
 
@@ -23,11 +22,9 @@
 		var hot;
 		var other;
 		$.getJSON("http://localhost:8080/src/data/xiu2.json", function(res) {
-
 			var xiu2Obj = res.result;
 			hot = xiu2Obj.hot;
 			other = xiu2Obj.other;
-
 			$("#top").html(baidu.template("temoXiu2top", { xiu2Obj: xiu2Obj }));
 			$("#botm").html(baidu.template("temoXiu2btom", { xiu2Obj: xiu2Obj }));
 		})
@@ -36,9 +33,7 @@
 		//xiu3.json卖手机/电脑部分
 
 		$.getJSON("http://localhost:8080/src/data/xiu3.json", function(res) {
-
 			var xiu3Obj = res.result;
-
 			$("#div_3").html(baidu.template("temoXiu3", { xiu3Obj: xiu3Obj }));
 		})
 		//xiu3.json卖手机/电脑部分
@@ -47,7 +42,6 @@
 
 		$.getJSON("http://localhost:8080/src/data/xiu4.json", function(res) {
 			var xiu4Obj = res.result;
-
 			$("#div_4").html(baidu.template("temoXiu4", { xiu4Obj: xiu4Obj }));
 		})
 		//xiu4.json卖二手手机部分
@@ -56,7 +50,6 @@
 
 		$.getJSON("http://localhost:8080/src/data/shoujihuishou.json", function(res) {
 			var huiShou = res.result;
-
 			$(".right").html(baidu.template("huiShou", { huiShou: huiShou }));
 
 		})
@@ -66,7 +59,6 @@
 
 		$.getJSON("http://localhost:8080/src/data/youpinjingxuan.json", function(res) {
 			var youpin = res.result;
-
 			$(".right2").html(baidu.template("youpin", { youpin: youpin }));
 
 		})
@@ -76,16 +68,12 @@
 		function moren() {
 
 			$.getJSON("http://localhost:8080/src/data/shop1.json", function(req, res) {
-
-				console.log(req);
 				$(".v_2").html(baidu.template("shop1", { req: req }));
-
 			})
 		}
 		moren()
 
 		$.getJSON("http://localhost:8080/src/data/shop1.json", function(req, res) {
-			console.log(req);
 			$(".ul_5").html(baidu.template("remen", { req: req }));
 
 		})
@@ -95,7 +83,6 @@
 
 			$.getJSON("http://localhost:8080/src/data/shop2.json", function(res) {
 				var chengJiao = res.shop_data;
-				console.log(chengJiao);
 				$(".v_2").html(baidu.template("shop2", { chengJiao: chengJiao }));
 
 			})
@@ -103,12 +90,10 @@
 		//shop2.json成交量部分
 		//shop3.json人气部分
 		function renqi() {
-
 			$.getJSON("http://localhost:8080/src/data/shop3.json", function(res) {
 				var chengJiao = res.shop_data;
 				console.log(chengJiao);
 				$(".v_2").html(baidu.template("shop3", { chengJiao: chengJiao }));
-
 			})
 		}
 		//shop3.json人气部分
@@ -153,14 +138,8 @@
 			$("#div_4").stop().hide()
 		});
 
-		//显示隐藏部分
-//		$(".v_1 li").click(function() {
-//			$(this).css("background", "#FFFCF4");
-//			$(this).unbind("mouseout");
-//
-//		});
-		//			function delMsg(id) {
-		//			$.get("http://localhost:8080/delMsg", { id: id }, function() {
-		//				window.open("../src/html/dome.html")
-		//			})
-		//		}
+		function oPon(id) {
+//			alert(1)
+			window.open("http://localhost:8080/src/html/dome.html/"+id);
+		}
+	
