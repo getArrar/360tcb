@@ -1,0 +1,154 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#search{
+	width: 100%;
+	height: 120px;
+	border-bottom: 5px solid #4BAC20;
+	position: absolute;
+	left: 0px;
+	top:35px;
+	
+}
+#search-box{
+	width: 60%;
+	height: 100%;
+	/*border: 1px solid red;*/
+	margin: auto;
+	display: flex;
+}
+#search-box div:nth-child(1){
+	/*border: 1px solid brown;*/
+	width: 252px;
+	height: 80%;
+	margin-top: 10px;
+	
+	background-image: url(../html/Imagdsdsadsad.jpg);
+}
+
+#search-box div:nth-child(2){
+	flex: 2;
+	height: 100%;
+	/*border: 1px solid aquamarine;*/
+}
+#search-box div:nth-child(2) ul{
+	display: flex;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#search-box div:nth-child(2) ul li{
+	/*border: 1px solid red;*/
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	font-size: 13px;
+	
+}
+#search-box div:nth-child(2) ul li:hover{
+	background: #4BAC20;
+	color: white;
+}
+#search-box div:nth-child(2) div{
+	height: 30%;
+	width: 100%;
+	display: flex;
+	border: none;
+}
+#search-box div:nth-child(2) div input:nth-child(1){
+	width: 70%;
+	height: 100%;
+	border: none;
+	border: 3px solid #4BAC20;
+	margin-left: 10px;
+	
+}
+#search-box div:nth-child(2) div input:nth-child(2){
+	width: 100px;
+	height: 100%;
+	border: none;
+	border: 3px solid #4BAC20;
+	background: #4BAC20;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	line-height: 100%;
+}
+/*搜索部分*/
+
+#details{
+	width: 60%;
+	/*border: 1px solid red;*/
+	margin: auto;
+	position: absolute;
+	top: 170px;
+	left: 320px;
+}
+.details-1{
+	width: 100%;
+	height: 200px;
+	border: 1px solid lightgray;
+	display: flex;
+	background: #FBFCFE;
+}
+.details-1 div:nth-child(1){
+	width: 200px;
+	height: 200px;
+	/*border: 1px solid red;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.details-1 div:nth-child(1) img{
+	width: 160px;
+	height: 160px;
+	border: 1px solid gainsboro;
+}
+.details-1 div:nth-child(2){
+	flex: 1;
+	/*border: 1px solid red;*/
+}
+.details-1 div:nth-child(2) h3{
+	margin-top: 17px;
+	
+}
+.details-1 div:nth-child(2) h3 span{
+	width: 55px;
+	height: 17px;
+	/*border: 1px solid darkgreen;*/
+	display: inline-block;
+	background-image: url(../img/t016a4ca185200c2e5e.png);
+	
+}
+.details-1 div:nth-child(2) span{
+	margin-right: 20px;
+	color: darkgray;
+	display: inline-block;
+	margin-top: 13px;
+}
+.details-1 div:nth-child(2) p{
+	margin-top: 13px;
+	
+}
+.details-1 div:nth-child(3){
+	flex: 1;
+	/*border: 1px solid red;*/
+	text-align: right;
+}
+.details-1 div:nth-child(3) span{
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 13px;
+	margin-right: 10px;
+}
+.details-1 div:nth-child(3) p{
+	margin-top: 20px;
+	margin-right: 10px;
+}
+.details-1 div:nth-child(3) p span{
+	color: #2ECE02;
+}

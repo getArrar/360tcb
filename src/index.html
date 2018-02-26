@@ -6,15 +6,16 @@
 		<title>360同城邦</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 
 	<body>
 		<!---------------------头部结构部分----------------------------->
-		
+
 		<header>
 			<ul class="left">
-				<li>郑州</li>
+				<li id="city" style="color: green; font-size: 16px;">郑州</li>
 				<li>
 					<a href="#" id="xianshi">[切换城市]</a>
 				</li>
@@ -22,20 +23,30 @@
 			</ul>
 			<ul class="ulright">
 				<li>
-					<a href="#">登录</a>
+					<a href="#" id="deng">登录</a>
 				</li>
 				<li>
-					<a href="">注册</a>
+					<a href="#" id="login">注册</a>
 				</li>
-				<li>我的订单</li>
-				<li>在线服务(9:00-21:00)</li>
-				<li>客户服务</li>
-				<li>论坛</li>
-				<li style="color: red;">投诉建议</li>
+				<li>
+					<a href="#">我的订单</a>
+				</li>
+				<li>
+					<a href="#">在线服务(9:00-21:00)</a>
+				</li>
+				<li>
+					<a href="#">客户服务</a>
+				</li>
+				<li>
+					<a href="#">论坛</a>
+				</li>
+				<li>
+					<a href="#" style="color: red;">投诉建议</a>
+				</li>
 			</ul>
 		</header>
 		<!-------------------头部结构部分------------------------------->
-		
+
 		<!-------------------城市列表结构部分--------------------------->
 		<div id="nav">
 			<ul>
@@ -57,9 +68,9 @@
 
 		</div>
 		<!-------------------城市列表结构部分------------------------------->
-		
+
 		<!-------------------轮播定位列表结构部分--------------------------->
-		
+
 		<div id="container">
 			<div id="ul_x">
 				<img src="img/Image 1.png" />
@@ -85,55 +96,61 @@
 				</ul>
 
 			</div>
-		<!-------------------轮播定位列表结构部分--------------------------->
-			
-		<!------------------------轮播图部分-------------------------------->
-		
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-				</ol>
+			<!-------------------轮播定位列表结构部分--------------------------->
 
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="img/t010277e84ce18b98b6.png" alt="..."  width="100%" height="100%">
-						<div class="carousel-caption">
+			<!------------------------轮播图部分-------------------------------->
 
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/t019f09cd1c5850e1a7.png" alt="..."  width="100%" height="100%">
-						<div class="carousel-caption">
-
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/t01f2fbcfa29801c4b2.jpg" alt="..."  width="100%" height="100%">
-						<div class="carousel-caption">
-
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/t01f33137f9dde655ce.png" alt="..."  width="100%" height="100%">
-						<div class="carousel-caption">
-
-						</div>
-					</div>
-
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/t01f33137f9dde655ce.png" /></div>
+					<div class="swiper-slide"><img src="http://p.ssl.qhmsg.com/t01f2fbcfa29801c4b2.jpg" /></div>
+					<div class="swiper-slide"><img src="http://p4.qhmsg.com/t010277e84ce18b98b6.png" /></div>
+					<!--<div class="swiper-slide"><img src="http://p6.qhmsg.com/t019f09cd1c5850e1a7.png"/></div>-->
 				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<ul class="liebiao">
+					<li class="li1">
+						<p><img src="img/iphone.png" />修手机/pad</p>
+						<div class="li1-div">
+
+						</div>
+					</li>
+					<li class="li2">
+						<p><img src="img/phone.png" />修电脑</p>
+						<div class="li2-div">
+							<div id="top"></div>
+							<div id="botm"></div>
+						</div>
+					</li>
+
+					<li class="li3">
+						<p><img src="img/book.png" />卖手机/电脑</p>
+						<div class="li3-div">
+
+						</div>
+					</li>
+					<li class="li4">
+						<p><img src="img/book.png" />买二手机</p>
+						<div class="li4-div">
+
+						</div>
+					</li>
+				</ul>
 			</div>
-		<!-----------------------------轮播图部分--------------------------->
-			
+
+			<!-- Swiper JS -->
+
+			<!-----------------------------轮播图部分--------------------------->
+
 			<div id="box_1">
-				<a href="http://bang.360.cn/xiu/battery?from=index"><img src="https://p.ssl.qhimg.com/t01aad5c130b8653368.jpg" /></a>
-				<a href="http://bang.360.cn/xiu/battery?from=index"><img src="https://p.ssl.qhimg.com/t01dc8f9631026e7e17.jpg" /></a>
-				<a href="http://bang.360.cn/huanxin/kindle?from=index"><img src="https://p.ssl.qhimg.com/t013b648422d14559d0.png" /></a>
-				<a href="http://bang.360.cn/youpin/shengji?from=index"><img src="https://p.ssl.qhimg.com/t01fc1fd0e5522663ba.jpg" /></a>
+				<div><a href="http://bang.360.cn/xiu/battery?from=index"><img src="https://p.ssl.qhimg.com/t01aad5c130b8653368.jpg" /></a></div>
+				<div><a href="http://bang.360.cn/xiu/battery?from=index"><img src="https://p.ssl.qhimg.com/t01dc8f9631026e7e17.jpg" /></a></div>
+				<div><a href="http://bang.360.cn/huanxin/kindle?from=index"><img src="https://p.ssl.qhimg.com/t013b648422d14559d0.png" /></a></div>
+				<div><a href="http://bang.360.cn/youpin/shengji?from=index"><img src="https://p.ssl.qhimg.com/t01fc1fd0e5522663ba.jpg" /></a></div>
+					
+				
 			</div>
 			<div class="title">
 				<h4>热门手机回收</h4>
@@ -146,8 +163,8 @@
 				<div class="right"></div>
 			</div>
 			<div class="title">
-				<h4>优品精选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-				<a href="#" class="margin">查看更多</a>
+				<h4>优品精选</h4>
+				<a href="#">查看更多</a>
 			</div>
 			<div id="box_2">
 				<div class="left">
@@ -158,18 +175,19 @@
 				</div>
 			</div>
 			<h2>到店维修</h2>
-		<!-------------------------------搜索部分--------------------------->
-			
+			<!-------------------------------搜索部分--------------------------->
+
 			<div id="serch">
 				<div></div>
 				<div></div>
 				<input type="search" name="" id="sousuo" value="" placeholder="请输入您的位置查找附近的商家" />
 				<a href="#">搜索</a>
 			</div>
-		<!-------------------------------搜索部分--------------------------->
-			
-		<!---------------------------店铺详情部分--------------------------->
-			<div id="container_2">
+			<!-------------------------------搜索部分--------------------------->
+
+			<!---------------------------店铺详情部分--------------------------->
+			<div id="v2">
+
 				<div class="container_2_left">
 					<ul class="v_1">
 						<li onclick="moren()">默认排序</li>
@@ -182,16 +200,14 @@
 							地图模式
 						</li>
 					</ul>
-					
+
 					<div class="v_2">
 
 					</div>
-		<!----------------------------店铺详情部分------------------------------>
-					
-
+					<!----------------------------店铺详情部分------------------------------>
 				</div>
-		<!---------------------------商家好评店铺部分--------------------------->
-				
+				<!---------------------------商家好评店铺部分--------------------------->
+
 				<div class="container_2_right">
 					<div id="hed">
 						商家好评榜
@@ -200,29 +216,9 @@
 
 					</ul>
 				</div>
-		<!---------------------------商家好评店铺部分--------------------------->
-				
 			</div>
 		</div>
 
-		<!---------------------------轮播导航栏定位部分--------------------------->
-		<ul id="daohang">
-			<li class="li1"><span class="glyphicon glyphicon-phone"></span>修手机/pad</li>
-			<li class="li2"><span class="glyphicon glyphicon-blackboard"></span>修电脑</li>
-			<li class="li3"><span class="glyphicon glyphicon-inbox"></span>卖手机/电脑</li>
-			<li class="li4"><span class="glyphicon glyphicon-print"></span>卖二手手机</li>
-		</ul>
-		
-		<div id="div_1">
-
-		</div>
-		<div id="div_2">
-			<div id="top"></div>
-			<div id="botm"></div>
-		</div>
-		<div id="div_3"></div>
-		<div id="div_4"></div>
-		<!---------------------------轮播导航栏定位部分--------------------------->
 		<!------------------------------脚部结构部分------------------------------>
 		<div id="foot">
 			<div>
@@ -255,20 +251,50 @@
 			</div>
 		</div>
 		<!---------------------------脚部结构部分--------------------------->
+		<!---------------------------注册部分--------------------------->
+		<div id="zhezhao">
+			<div class="login-div">
+				<div id="center">
+					<h3></h3>
+					<label for="user">用户名：</label><input type="text" name="user" id="user" value="" /><span class="span-1"></span><br />
+					<label for="pwd">密码：</label><input type="password" name="pwd" id="pwd" value="" /><br />
+
+					<input type="button" name="zhuce" id="zhuce" value="注册" />
+
+				</div>
+			</div>
+		</div>
+		<!---------------------------注册部分--------------------------->
+		<!---------------------------登陆部分--------------------------->
+
+		<div id="denglu_1">
+			<div class="login-div">
+				<div id="center">
+					<h3>欢迎用户登陆</h3>
+					<label for="user1">用户名：</label><input type="text" name="user1" id="user1" value="" /><br />
+					<label for="pwd1">密码：</label><input type="password" name="pwd1" id="pwd1" value="" /><br />
+
+					<input type="button" name="denglu" id="denglu" value="登陆" />
+
+				</div>
+			</div>
+		</div>
+		<!---------------------------登陆部分--------------------------->
+
 	</body>
-		<!------------------------百度模板渲染部分--------------------------->
+	<!------------------------百度模板渲染部分--------------------------->
 	<!--热门城市渲染-->
 	<script type="text/html" id="temohou">
 		<%for(var i = 0 ;i < hotCity.length ; i ++){%>
 
-		<li>
+		<li onclick="chrngshi('<%=hotCity[i].name%>')">
 			<%=hotCity[i].name%>
 		</li>
 
 		<%}%>
 	</script>
 	<!--热门城市渲染-->
-	
+
 	<!--搜索城市渲染-->
 	<script type="text/html" id="temolist">
 		<%for(var k in obj){%>
@@ -282,7 +308,7 @@
 	<script type="text/html" id="temoCity">
 		<%for(var i = 0 ;i < City.length ; i ++){%>
 
-		<li>
+		<li onclick="chrngshi('<%=City[i].name%>')">
 			<%=City[i].name%>
 		</li>
 
@@ -291,82 +317,75 @@
 	<!--搜索城市渲染-->
 	<!--修手机/pad渲染部份-->
 	<script type="text/html" id="temoXiu">
-		<%for(var i = 0 ;i < xiu1Obj.length ; i ++){%>
-		<ul class="xiu1">
-
+		<ul>
+			<%for(var i = 0 ;i < xiu1Obj.length ; i ++){%>
 			<li>
-				<%=xiu1Obj[i].name%>
+				<span class="spanleft"><%=xiu1Obj[i].name%></span>
 				<%for(var j = 0 ;j < xiu1Obj[i].list.length ; j ++){%>
-				<ul>
-					<li>
-						<%=xiu1Obj[i].list[j].name%>
-					</li>
-				</ul>
+				<span class="spanright"><%=xiu1Obj[i].list[j].name%></span>
 				<%}%>
 			</li>
+			<%}%>
 		</ul>
-		<%}%>
 	</script>
 	<!--修手机/pad渲染部份-->
-	
+
 	<!--修电脑渲染部分-->
 	<script type="text/html" id="temoXiu2top">
-		<%for(var i = 0 ;i <hot.length ; i ++){%>
-
 		<ul>
+			<%for(var i = 0 ;i <hot.length ; i ++){%>
+
 			<li>
 				<%=hot[i].name%>
 			</li>
-		</ul>
 
-		<%}%>
+			<%}%>
+		</ul>
 
 	</script>
 	<script type="text/html" id="temoXiu2btom">
-		<%for(var i = 0 ;i <other.length ; i ++){%>
-
 		<ul>
+			<%for(var i = 0 ;i <other.length ; i ++){%>
+
 			<li>
 				<%=other[i].name%>
 			</li>
-		</ul>
 
-		<%}%>
+			<%}%>
+		</ul>
 
 	</script>
 	<!--修电脑渲染部分-->
-	
-	
+
 	<!--卖手机/电脑渲染部分-->
 	<script type="text/html" id="temoXiu3">
-		<%for(var i = 0 ;i < xiu3Obj.length ; i ++){%>
-
 		<ul>
+			<%for(var i = 0 ;i < xiu3Obj.length ; i ++){%>
+
 			<li>
 				<%=xiu3Obj[i].name%>
 			</li>
-		</ul>
 
-		<%}%>
+			<%}%>
+		</ul>
 
 	</script>
 	<!--卖手机/电脑渲染部分-->
-	
+
 	<!--卖二手手机渲染部分-->
 	<script type="text/html" id="temoXiu4">
-		<%for(var k in xiu4Obj){%>
-
 		<ul>
+			<%for(var k in xiu4Obj){%>
+
 			<li>
 				<%=xiu4Obj[k]%>
 			</li>
-		</ul>
 
-		<%}%>
+			<%}%>
+		</ul>
 	</script>
 	<!--卖二手手机渲染部分-->
-	
-	
+
 	<!--手机回收渲染部分-->
 	<script type="text/html" id="huiShou">
 		<%for(var i = 0 ;i < huiShou.length ; i ++){%>
@@ -381,7 +400,7 @@
 		<%}%>
 	</script>
 	<!--手机回收渲染部分-->
-	
+
 	<!--优品精选渲染部分-->
 	<script type="text/html" id="youpin">
 		<%for(var i = 0 ;i < youpin.length ; i ++){%>
@@ -392,15 +411,16 @@
 				<p>
 					<%=youpin[i].model_name%>
 				</p>
-				<p>
-					￥<%=youpin[i].com_price%>
+				<p style="color: red;">
+					￥
+					<%=youpin[i].com_price%>
 				</p>
 			</figcaption>
 		</figure>
 		<%}%>
 	</script>
 	<!--优品精选渲染部分-->
-	
+
 	<!--店铺详情渲染部分 默认排序-->
 	<script type="text/html" id="shop1">
 		<%for(var i = 0 ;i < req.length ; i ++){%>
@@ -422,17 +442,16 @@
 			</div>
 			<div>
 				<span>人气：<%=req[i].shop_visit%>次浏览</span>
-				<a href="#" class="store">进入店铺</a>
+				<a href="#" class="store" onclick="oPon('<%=req[i].shop_id%>')">进入店铺</a>
 			</div>
 
 		</div>
 		<%}%>
 	</script>
 	<!--店铺详情渲染部分 默认排序-->
-	
-	
+
 	<!--店铺详情渲染部分 成交量排序-->
-	
+
 	<script type="text/html" id="shop2">
 		<%for(var i = 0 ;i < chengJiao.length ; i ++){%>
 
@@ -460,9 +479,9 @@
 		<%}%>
 	</script>
 	<!--店铺详情渲染部分 成交量排序-->
-	
+
 	<!--店铺详情渲染部分 人气量排序-->
-	
+
 	<script type="text/html" id="shop3">
 		<%for(var i = 0 ;i < chengJiao.length ; i ++){%>
 
@@ -490,9 +509,9 @@
 		<%}%>
 	</script>
 	<!--店铺详情渲染部分 人气量排序-->
-	
+
 	<!--商家好评-->
-	
+
 	<script type="text/html" id="remen">
 
 		<%for(var i = 0 ;i < req.length ; i ++){%>
@@ -511,10 +530,13 @@
 		<%}%>
 	</script>
 	<!--商家好评-->
-	
-		<!-------------------百度模板渲染部分--------------------------->
+
+	<!-------------------百度模板渲染部分--------------------------->
 	<script type="text/javascript" src="js/baiduTemplate.js"></script>
 	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Swiper-4.1.0/dist/js/swiper.js">
+	</script>
 	<script type="text/javascript" src="js/tongchengBang.js"></script>
+
 </html>
